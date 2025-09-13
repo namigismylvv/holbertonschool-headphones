@@ -17,9 +17,19 @@
   --second-font-weight: 600;
   --third-font-weight: 400;
   --title-size: 32px;
-  --text-size: 16px;
+  --text-size: 14px;
   --text-center: center;
   --transition: 0.2s;
+}
+h1,
+h2 {
+  font-size: var(--title-size);
+  line-height: var(--main-lineHeight);
+  text-align: var(--text-center);
+}
+h2,
+h3 {
+  font-weight: var(--second-font-weight);
 }
 ul {
   list-style: none;
@@ -53,8 +63,13 @@ body {
   border: none;
   color: var(--main-color);
   font-weight: var(--main-font-weight);
-  font-size: 14px;
+  font-size: var(--text-size);
   box-shadow: 0px 2px 20px 0px #00000080;
+}
+.global--description {
+  line-height: var(--text-lineHeight);
+  font-weight: var(--third-font-weight);
+  text-align: var(--text-center);
 }
 @font-face {
   font-family: "Source Sans Pro";
@@ -214,6 +229,7 @@ header {
 }
 
 /* Main */
+/* Hero Section */
 #hero {
   position: relative;
   background-image: url(images/headphones_hero_1.jpg);
@@ -239,26 +255,18 @@ header {
 }
 
 .hero__section h1 {
-  font-size: var(--title-size);
-  font-weight: var(--main-font-weight);
-  line-height: var(--main-lineHeight);
   color: var(--main-color);
   padding-bottom: 5px;
-  text-align: var(--text-center);
 }
 .hero__section p {
   color: var(--main-color);
-  font-size: var(--text-size);
   text-align: var(--text-center);
 }
 .hero__section h1 + p {
   font-weight: var(--main-font-weight);
-  line-height: var(--main-lineHeight);
   padding-bottom: 40px;
 }
 .hero__section button + p {
-  line-height: var(--text-lineHeight);
-  font-weight: var(--third-font-weight);
   padding-top: 60px;
 }
 @media only screen and (max-width: 480px) {
@@ -267,5 +275,10 @@ header {
   }
   .hero__section {
     top: 41%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #hero {
+    height: 869px;
   }
 }

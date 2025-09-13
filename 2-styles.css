@@ -20,7 +20,7 @@
   --text-size: 14px;
   --text-center: center;
   --transition: 0.2s;
-  --section-padding: 100px;
+  --section-padding: 100px 0;
 }
 h1,
 h2 {
@@ -296,11 +296,12 @@ header {
 }
 .blog__div__top {
   display: flex;
-  width: var(--content-max-width);
+  max-width: var(--content-max-width);
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: var(--text-spacing);
+  padding: 0 21px;
 }
 .blog__div__bottom {
   width: 85%;
@@ -333,10 +334,7 @@ header {
   }
 }
 @media only screen and (max-width: 690px) {
-.blog__div__top {
-  width: 500px;
-}
-  .blog__div__bottom{
+  .blog__div__bottom {
     width: 207px;
     height: 1000px;
   }
@@ -345,11 +343,76 @@ header {
     align-content: space-between;
   }
 }
-@media only screen and (max-width: 500px) {
- .blog__div__top {
-  width: 315px;
-  padding: 21px;
-} 
+/* Results section */
+#results {
+  background-image: url(images/headphones_hero_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: var(--section-padding);
+  width: 100%;
 }
-
-
+.results__div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+.results__div__top {
+  max-width: var(--content-max-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--text-spacing);
+  padding: 0 21px;
+}
+.results__div__top h2 {
+  color: var(--main-color);
+}
+.results__div__top p {
+  color: var(--main-color);
+}
+.results__div__bottom {
+  width: 85%;
+}
+.results__div__bottom__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.results__div__bottom__card {
+  position: relative;
+  width: 190px;
+}
+.results__div__bottom__card p {
+  position: absolute;
+}
+.results__div__bottom__card img {
+  width: 100%;
+}
+.results__div__bottom__card img + p {
+  top: 70px;
+  left: 51px;
+  font-size: 46px;
+  color: var(--main-color);
+  font-weight: var(--main-font-weight);
+}
+.results__div__bottom__card p + p {
+  color: var(--main-color);
+  font-size: var(--text-size);
+  bottom: 35px;
+  left: 40px;
+}
+@media only screen and (max-width: 895px) {
+  .results__div__bottom__cards {
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .results__div__bottom__cards {
+    justify-content: center;
+  }
+}
