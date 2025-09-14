@@ -1,3 +1,7 @@
+Please take a look at the part of advanced task process.(Important !!!) 
+
+---
+
 # Headphones Landing Page
 
 This project is a responsive **Headphones Landing Page** built with **HTML5** and **CSS3**.  
@@ -44,4 +48,13 @@ The project was divided into **5 parts**:
   - White `#ffffff`  
   - Dark Blue `#071629`  
   - Accent Red `#ff6565`  
+
+
+---
+
+# Advanced Task Process
+- I did some changes in responsive design before i started advanced tasks.I meant that i changed the responsive design in the files 4-index.html, 4-styles.css to the files 100-index.html,100-styles.css and other files.
+-- Pentagon added via the technics polygon. 
+-- Added the technics rotate and scale to the “What we do…” and “Our results” sections items.
+
 
