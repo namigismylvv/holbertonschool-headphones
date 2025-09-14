@@ -54,7 +54,8 @@ The project was divided into **5 parts**:
 
 # Advanced Task Process
 - I did some changes in responsive design before i started advanced tasks.I meant that i changed the responsive design in the files 4-index.html, 4-styles.css to the files 100-index.html,100-styles.css and other files.
--- Pentagon added via the technics polygon. 
--- Added the technics rotate and scale to the “What we do…” and “Our results” sections items.
+- Pentagon added via the technics polygon. 
+- Added the technics rotate and scale to the “What we do…” and “Our results” sections items.
+- Added the SASS version of 101-styles.css.Firstly i created 101-styles.css file.Then i typed mixin flexbox,variables and nested writings.Then i used  "sass 102-styles.scss > 101-styles.css" code.
 
 
